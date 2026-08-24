@@ -5,6 +5,7 @@ import { BOOK_DETAILS } from '@/lib/data/resources';
 import { BookOpen, Star, CheckCircle2, ArrowRight, Sparkles } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import julieBook from '@/public/images/julie-book.jpg';
 
 export default function BookShowcase() {
   return (
@@ -21,13 +22,9 @@ export default function BookShowcase() {
                 <div className="relative bg-[#FAF8F5] rounded-3xl p-3.5 border border-[#E8DFC8] shadow-xl overflow-hidden group">
                   <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden border-2 border-[#C59E4E]/80 shadow-md bg-[#0B1325]">
                     <Image
-                      src="/images/julie-book.jpg"
+                      src={julieBook}
                       alt="Julie Goetzinger holding her book Free to Fly: Manifest the Life of Your Dreams"
-                      width={480}
-                      height={360}
-                      loading="lazy"
-                      sizes="(max-width: 640px) 320px, 480px"
-                      quality={85}
+                      placeholder="blur"
                       className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-103"
                       referrerPolicy="no-referrer"
                     />

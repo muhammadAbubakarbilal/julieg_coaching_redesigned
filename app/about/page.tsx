@@ -8,6 +8,8 @@ import ScrollDownIndicator from '@/components/ScrollDownIndicator';
 import { Award, Compass, Heart, BookOpen, Sun, MapPin, CheckCircle2, ArrowRight, ShieldCheck } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import juliePortrait from '@/public/images/julie-portrait.jpg';
+import julieBook from '@/public/images/julie-book.jpg';
 
 export default function AboutPage() {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
@@ -45,13 +47,10 @@ export default function AboutPage() {
             <div className="md:col-span-4 text-center space-y-3">
               <div className="relative w-40 h-40 sm:w-44 sm:h-44 mx-auto rounded-full overflow-hidden border-3 border-[#C59E4E] shadow-md group bg-[#0B1325]">
                 <Image
-                  src="/images/julie-portrait.jpg"
+                  src={juliePortrait}
                   alt="Julie Goetzinger - Certified Astrocartographer"
-                  width={200}
-                  height={200}
                   priority
-                  sizes="(max-width: 640px) 160px, 200px"
-                  quality={85}
+                  placeholder="blur"
                   className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
                   referrerPolicy="no-referrer"
                 />
@@ -107,13 +106,9 @@ export default function AboutPage() {
               <div className="sm:col-span-5 flex justify-center">
                 <div className="relative w-full max-w-[260px] aspect-[4/3] rounded-2xl overflow-hidden border-2 border-[#C59E4E] shadow-md">
                   <Image
-                    src="/images/julie-book.jpg"
+                    src={julieBook}
                     alt="Julie Goetzinger with her book Free to Fly"
-                    width={300}
-                    height={225}
-                    loading="lazy"
-                    sizes="(max-width: 640px) 260px, 300px"
-                    quality={85}
+                    placeholder="blur"
                     className="w-full h-full object-cover object-center"
                     referrerPolicy="no-referrer"
                   />

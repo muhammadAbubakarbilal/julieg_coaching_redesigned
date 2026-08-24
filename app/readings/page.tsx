@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import BookingModal from '@/components/BookingModal';
 import ScrollDownIndicator from '@/components/ScrollDownIndicator';
 import Image from 'next/image';
+import juliePortrait from '@/public/images/julie-portrait.jpg';
 import { SERVICES } from '@/lib/data/services';
 import { CheckCircle2, Video, FileText, MapPin, Calendar, Compass, ArrowRight, ShieldCheck, HelpCircle } from 'lucide-react';
 import Link from 'next/link';
@@ -140,13 +141,9 @@ export default function ReadingsPage() {
           <div className="bg-white rounded-3xl p-6 sm:p-8 border border-[#E8DFC8] shadow-xs flex flex-col sm:flex-row items-center gap-5">
             <div className="w-18 h-18 sm:w-20 sm:h-20 rounded-full overflow-hidden border-2 border-[#C59E4E] shrink-0 bg-[#0B1325] shadow-md">
               <Image
-                src="/images/julie-portrait.jpg"
+                src={juliePortrait}
                 alt="Julie Goetzinger"
-                width={80}
-                height={80}
-                loading="lazy"
-                sizes="80px"
-                quality={85}
+                placeholder="blur"
                 className="w-full h-full object-cover object-center"
                 referrerPolicy="no-referrer"
               />
