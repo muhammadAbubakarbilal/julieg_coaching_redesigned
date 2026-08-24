@@ -80,6 +80,9 @@ export default function ContactPage() {
                       alt="Julie Goetzinger"
                       width={64}
                       height={64}
+                      loading="lazy"
+                      sizes="64px"
+                      quality={85}
                       className="w-full h-full object-cover object-center"
                       referrerPolicy="no-referrer"
                     />

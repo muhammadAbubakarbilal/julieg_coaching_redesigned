@@ -49,6 +49,9 @@ export default function AboutPage() {
                   alt="Julie Goetzinger - Certified Astrocartographer"
                   width={200}
                   height={200}
+                  priority
+                  sizes="(max-width: 640px) 160px, 200px"
+                  quality={85}
                   className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
                   referrerPolicy="no-referrer"
                 />
@@ -108,6 +111,9 @@ export default function AboutPage() {
                     alt="Julie Goetzinger with her book Free to Fly"
                     width={300}
                     height={225}
+                    loading="lazy"
+                    sizes="(max-width: 640px) 260px, 300px"
+                    quality={85}
                     className="w-full h-full object-cover object-center"
                     referrerPolicy="no-referrer"
                   />

@@ -25,6 +25,9 @@ export default function BookShowcase() {
                       alt="Julie Goetzinger holding her book Free to Fly: Manifest the Life of Your Dreams"
                       width={480}
                       height={360}
+                      loading="lazy"
+                      sizes="(max-width: 640px) 320px, 480px"
+                      quality={85}
                       className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-103"
                       referrerPolicy="no-referrer"
                     />

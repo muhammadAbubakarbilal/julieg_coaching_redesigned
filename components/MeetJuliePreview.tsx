@@ -22,6 +22,9 @@ export default function MeetJuliePreview() {
                     alt="Julie Goetzinger - Certified Astrocartographer"
                     width={240}
                     height={240}
+                    loading="lazy"
+                    sizes="(max-width: 640px) 192px, 240px"
+                    quality={85}
                     className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
                     referrerPolicy="no-referrer"
                   />

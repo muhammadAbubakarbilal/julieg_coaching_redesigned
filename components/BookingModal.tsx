@@ -95,6 +95,9 @@ export default function BookingModal({
                 alt="Julie Goetzinger"
                 width={48}
                 height={48}
+                loading="lazy"
+                sizes="48px"
+                quality={85}
                 className="w-full h-full object-cover object-center"
                 referrerPolicy="no-referrer"
               />

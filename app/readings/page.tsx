@@ -144,6 +144,9 @@ export default function ReadingsPage() {
                 alt="Julie Goetzinger"
                 width={80}
                 height={80}
+                loading="lazy"
+                sizes="80px"
+                quality={85}
                 className="w-full h-full object-cover object-center"
                 referrerPolicy="no-referrer"
               />

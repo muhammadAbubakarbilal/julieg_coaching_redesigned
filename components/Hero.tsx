@@ -123,6 +123,9 @@ export default function Hero({ onOpenBooking, onOpenQuiz }: HeroProps) {
                       alt="Julie Goetzinger"
                       width={72}
                       height={72}
+                      priority
+                      sizes="72px"
+                      quality={85}
                       className="w-full h-full object-cover object-center"
                       referrerPolicy="no-referrer"
                     />
