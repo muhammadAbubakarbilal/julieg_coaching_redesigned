@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import juliePortrait from '@/public/images/julie-portrait.jpg';
 import { X, CheckCircle2, Calendar, Clock, MapPin, Compass, HelpCircle, ArrowRight, ShieldCheck } from 'lucide-react';
 import { SERVICES } from '@/lib/data/services';
 
@@ -92,9 +91,10 @@ export default function BookingModal({
           <div className="flex items-center gap-3.5">
             <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-[#C59E4E] shrink-0 bg-[#1A243F]">
               <Image
-                src={juliePortrait}
+                src="/images/julie-portrait.jpg"
                 alt="Julie Goetzinger"
-                placeholder="blur"
+                width={96}
+                height={96}
                 className="w-full h-full object-cover object-center"
                 referrerPolicy="no-referrer"
               />

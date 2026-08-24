@@ -3,7 +3,6 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import juliePortrait from '@/public/images/julie-portrait.jpg';
 import { Compass, MapPin, ArrowRight, ShieldCheck, Star, Sparkles, CheckCircle2 } from 'lucide-react';
 import ScrollDownIndicator from '@/components/ScrollDownIndicator';
 
@@ -120,10 +119,11 @@ export default function Hero({ onOpenBooking, onOpenQuiz }: HeroProps) {
                 <div className="flex items-center gap-3.5">
                   <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-[#C59E4E] shrink-0 shadow-md bg-[#0B1325]">
                     <Image
-                      src={juliePortrait}
+                      src="/images/julie-portrait.jpg"
                       alt="Julie Goetzinger"
+                      width={128}
+                      height={128}
                       priority
-                      placeholder="blur"
                       className="w-full h-full object-cover object-center"
                       referrerPolicy="no-referrer"
                     />

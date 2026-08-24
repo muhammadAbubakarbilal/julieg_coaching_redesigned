@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import juliePortrait from '@/public/images/julie-portrait.jpg';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import TrustBar from '@/components/TrustBar';
@@ -397,9 +396,10 @@ export default function HomePage() {
             <div className="md:col-span-4 text-center space-y-2.5">
               <div className="relative w-40 h-40 mx-auto rounded-full overflow-hidden border-3 border-[#C59E4E] shadow-lg group bg-[#121315]">
                 <Image
-                  src={juliePortrait}
+                  src="/images/julie-portrait.jpg"
                   alt="Julie Goetzinger - Certified Astrocartographer"
-                  placeholder="blur"
+                  width={320}
+                  height={320}
                   className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
                   referrerPolicy="no-referrer"
                 />
