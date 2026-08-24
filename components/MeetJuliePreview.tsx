@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import juliePortrait from '@/public/images/julie-portrait.jpg';
 import { Award, Compass, Heart, ArrowRight, BookOpen } from 'lucide-react';
 
 export default function MeetJuliePreview() {
@@ -18,12 +19,10 @@ export default function MeetJuliePreview() {
                 {/* Avatar / Portrait Image */}
                 <div className="relative w-48 h-48 mx-auto rounded-full overflow-hidden border-3 border-[#C59E4E] shadow-xl group bg-[#0B1325]">
                   <Image
-                    src="/images/julie-portrait.jpg"
+                    src={juliePortrait}
                     alt="Julie Goetzinger - Certified Astrocartographer"
-                    width={384}
-                    height={384}
+                    placeholder="blur"
                     className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                    referrerPolicy="no-referrer"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0B1325]/40 via-transparent to-transparent opacity-40 pointer-events-none" />
                 </div>

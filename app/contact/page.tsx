@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ScrollDownIndicator from '@/components/ScrollDownIndicator';
 import Image from 'next/image';
+import juliePortrait from '@/public/images/julie-portrait.jpg';
 import { Mail, Compass, CheckCircle2, ArrowRight, Clock, MapPin } from 'lucide-react';
 import Link from 'next/link';
 
@@ -76,12 +77,10 @@ export default function ContactPage() {
                 <div className="flex items-center gap-4 p-5 bg-white rounded-3xl border border-[#E8DFC8] shadow-xs">
                   <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-[#C59E4E] shrink-0 bg-[#0B1325] shadow-xs">
                     <Image
-                      src="/images/julie-portrait.jpg"
+                      src={juliePortrait}
                       alt="Julie Goetzinger"
-                      width={128}
-                      height={128}
+                      placeholder="blur"
                       className="w-full h-full object-cover object-center"
-                      referrerPolicy="no-referrer"
                     />
                   </div>
                   <div>
