@@ -36,8 +36,8 @@ export default function ProcessSteps() {
   ];
 
   return (
-    <section className="py-20 bg-[#F4EFEA] border-y border-[#E8DFC8]/70">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+    <section id="process-steps" className="py-10 sm:py-14 bg-[#F4EFEA] border-y border-[#E8DFC8]/70">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         
         <div className="text-center max-w-3xl mx-auto space-y-3">
           <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7C6A46]">

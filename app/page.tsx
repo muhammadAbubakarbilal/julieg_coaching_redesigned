@@ -50,11 +50,11 @@ export default function HomePage() {
       <TrustBar />
 
       {/* 4. The Core Dilemma & Astrocartography Solution (Editorial 2-Column) */}
-      <section className="py-14 sm:py-18 bg-white border-y border-editorial">
+      <section id="astrocartography-solution" className="py-10 sm:py-14 bg-white border-y border-editorial">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
             
-            <div className="lg:col-span-6 space-y-4 text-center lg:text-left">
+            <div className="lg:col-span-6 space-y-3.5 text-center lg:text-left">
               <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#F5EFEB] border border-editorial text-xs font-semibold uppercase tracking-wider text-[#7C6A46]">
                 <Globe className="w-3.5 h-3.5 text-[#C59E4E]" />
                 <span>The Power of Locational Astrology</span>
@@ -72,7 +72,7 @@ export default function HomePage() {
                 Astrocartography projects your unique birth chart across the world, revealing the precise planetary lines that support financial expansion, joyful romance, grounded sanctuary, or spiritual peace.
               </p>
 
-              <div className="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3">
+              <div className="pt-1.5 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3">
                 <Link
                   href="/astrocartography"
                   className="w-full sm:w-auto px-6 py-3 bg-[#121315] hover:bg-[#202225] text-[#FAF6F0] text-xs uppercase tracking-wider font-semibold rounded-full shadow-md transition-all flex items-center justify-center gap-2 border border-editorial"
@@ -92,16 +92,16 @@ export default function HomePage() {
 
             {/* Visual Highlight Card */}
             <div className="lg:col-span-6">
-              <div className="bg-[#FAF6F0] rounded-3xl p-6 sm:p-7 border border-editorial shadow-xs space-y-4">
-                <div className="flex items-center justify-between border-b border-editorial pb-3">
+              <div className="bg-[#FAF6F0] rounded-3xl p-5 sm:p-6 border border-editorial shadow-xs space-y-3.5">
+                <div className="flex items-center justify-between border-b border-editorial pb-2.5">
                   <span className="text-xs font-bold uppercase tracking-wider text-[#C59E4E]">
                     What Your Map Reveals
                   </span>
                   <span className="text-xs text-[#64748B] font-mono">150-200 mi Influence</span>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  <div className="p-3.5 bg-white rounded-2xl border border-editorial shadow-xs">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                  <div className="p-3 bg-white rounded-2xl border border-editorial shadow-xs">
                     <div className="flex items-center gap-2 font-serif font-bold text-[#121315] mb-1">
                       <Sparkles className="w-3.5 h-3.5 text-[#C59E4E]" />
                       <span>Sun & Jupiter</span>
@@ -111,7 +111,7 @@ export default function HomePage() {
                     </p>
                   </div>
 
-                  <div className="p-3.5 bg-white rounded-2xl border border-editorial shadow-xs">
+                  <div className="p-3 bg-white rounded-2xl border border-editorial shadow-xs">
                     <div className="flex items-center gap-2 font-serif font-bold text-[#121315] mb-1">
                       <Sparkles className="w-3.5 h-3.5 text-[#E07A5F]" />
                       <span>Venus & Mercury</span>
@@ -121,7 +121,7 @@ export default function HomePage() {
                     </p>
                   </div>
 
-                  <div className="p-3.5 bg-white rounded-2xl border border-editorial shadow-xs">
+                  <div className="p-3 bg-white rounded-2xl border border-editorial shadow-xs">
                     <div className="flex items-center gap-2 font-serif font-bold text-[#121315] mb-1">
                       <Sparkles className="w-3.5 h-3.5 text-[#8E9EB8]" />
                       <span>Moon & IC Angle</span>
@@ -131,7 +131,7 @@ export default function HomePage() {
                     </p>
                   </div>
 
-                  <div className="p-3.5 bg-white rounded-2xl border border-editorial shadow-xs">
+                  <div className="p-3 bg-white rounded-2xl border border-editorial shadow-xs">
                     <div className="flex items-center gap-2 font-serif font-bold text-[#121315] mb-1">
                       <Sparkles className="w-3.5 h-3.5 text-[#7C6A46]" />
                       <span>Midheaven (MC)</span>
@@ -159,10 +159,10 @@ export default function HomePage() {
       </section>
 
       {/* 5. Separate Page Portals / Offerings Hub */}
-      <section className="py-14 sm:py-18 bg-[#FAF6F0]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+      <section id="offerings-hub" className="py-10 sm:py-14 bg-[#FAF6F0]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
           
-          <div className="text-center max-w-3xl mx-auto space-y-2.5">
+          <div className="text-center max-w-3xl mx-auto space-y-2">
             <span className="text-xs font-semibold uppercase tracking-wider text-[#7C6A46]">
               Choose Your Pathway
             </span>
@@ -177,9 +177,9 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 items-stretch">
             
             {/* Card 1: Private Readings */}
-            <div className="bg-white rounded-3xl p-6 border border-editorial shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between space-y-5 group">
-              <div className="space-y-3.5">
-                <div className="w-11 h-11 rounded-2xl bg-[#121315] text-[#C59E4E] flex items-center justify-center group-hover:scale-105 transition-transform">
+            <div className="bg-white rounded-3xl p-5 sm:p-6 border border-editorial shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between space-y-4 group">
+              <div className="space-y-3">
+                <div className="w-10 h-10 rounded-2xl bg-[#121315] text-[#C59E4E] flex items-center justify-center group-hover:scale-105 transition-transform">
                   <Compass className="w-5 h-5" />
                 </div>
                 
@@ -187,7 +187,7 @@ export default function HomePage() {
                   <span className="text-[11px] font-bold uppercase tracking-wider text-[#C59E4E] bg-[#F5EFEB] px-2.5 py-0.5 rounded-full">
                     $333 & $555
                   </span>
-                  <h3 className="font-serif text-xl font-bold text-[#121315] mt-2">
+                  <h3 className="font-serif text-xl font-bold text-[#121315] mt-1.5">
                     Private 1:1 Readings
                   </h3>
                   <p className="text-xs text-[#64748B] mt-0.5 font-sans">
@@ -226,9 +226,9 @@ export default function HomePage() {
             </div>
 
             {/* Card 2: 1:1 Mentoring Container */}
-            <div className="bg-white rounded-3xl p-6 border border-editorial shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between space-y-5 group">
-              <div className="space-y-3.5">
-                <div className="w-11 h-11 rounded-2xl bg-[#121315] text-[#C59E4E] flex items-center justify-center group-hover:scale-105 transition-transform">
+            <div className="bg-white rounded-3xl p-5 sm:p-6 border border-editorial shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between space-y-4 group">
+              <div className="space-y-3">
+                <div className="w-10 h-10 rounded-2xl bg-[#121315] text-[#C59E4E] flex items-center justify-center group-hover:scale-105 transition-transform">
                   <HeartHandshake className="w-5 h-5" />
                 </div>
                 
@@ -236,7 +236,7 @@ export default function HomePage() {
                   <span className="text-[11px] font-bold uppercase tracking-wider text-[#7C6A46] bg-[#F5EFEB] px-2.5 py-0.5 rounded-full">
                     3 to 6 Months
                   </span>
-                  <h3 className="font-serif text-xl font-bold text-[#121315] mt-2">
+                  <h3 className="font-serif text-xl font-bold text-[#121315] mt-1.5">
                     1:1 Mentoring Container
                   </h3>
                   <p className="text-xs text-[#64748B] mt-0.5 font-sans">
@@ -275,9 +275,9 @@ export default function HomePage() {
             </div>
 
             {/* Card 3: Sacred Retreats */}
-            <div className="bg-white rounded-3xl p-6 border border-editorial shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between space-y-5 group">
-              <div className="space-y-3.5">
-                <div className="w-11 h-11 rounded-2xl bg-[#121315] text-[#C59E4E] flex items-center justify-center group-hover:scale-105 transition-transform">
+            <div className="bg-white rounded-3xl p-5 sm:p-6 border border-editorial shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between space-y-4 group">
+              <div className="space-y-3">
+                <div className="w-10 h-10 rounded-2xl bg-[#121315] text-[#C59E4E] flex items-center justify-center group-hover:scale-105 transition-transform">
                   <Users className="w-5 h-5" />
                 </div>
                 
@@ -285,7 +285,7 @@ export default function HomePage() {
                   <span className="text-[11px] font-bold uppercase tracking-wider text-[#C59E4E] bg-[#F5EFEB] px-2.5 py-0.5 rounded-full">
                     Virtual & Destination
                   </span>
-                  <h3 className="font-serif text-xl font-bold text-[#121315] mt-2">
+                  <h3 className="font-serif text-xl font-bold text-[#121315] mt-1.5">
                     Transformational Retreats
                   </h3>
                   <p className="text-xs text-[#64748B] mt-0.5 font-sans">
@@ -324,9 +324,9 @@ export default function HomePage() {
             </div>
 
             {/* Card 4: Free Guide & Resources */}
-            <div className="bg-white rounded-3xl p-6 border border-editorial shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between space-y-5 group">
-              <div className="space-y-3.5">
-                <div className="w-11 h-11 rounded-2xl bg-[#121315] text-[#C59E4E] flex items-center justify-center group-hover:scale-105 transition-transform">
+            <div className="bg-white rounded-3xl p-5 sm:p-6 border border-editorial shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between space-y-4 group">
+              <div className="space-y-3">
+                <div className="w-10 h-10 rounded-2xl bg-[#121315] text-[#C59E4E] flex items-center justify-center group-hover:scale-105 transition-transform">
                   <BookOpen className="w-5 h-5" />
                 </div>
                 
@@ -334,7 +334,7 @@ export default function HomePage() {
                   <span className="text-[11px] font-bold uppercase tracking-wider text-[#7C6A46] bg-[#F5EFEB] px-2.5 py-0.5 rounded-full">
                     Free Guide & Media
                   </span>
-                  <h3 className="font-serif text-xl font-bold text-[#121315] mt-2">
+                  <h3 className="font-serif text-xl font-bold text-[#121315] mt-1.5">
                     Resources & Book
                   </h3>
                   <p className="text-xs text-[#64748B] mt-0.5 font-sans">
@@ -374,7 +374,7 @@ export default function HomePage() {
 
           </div>
 
-          <div className="text-center pt-2">
+          <div className="text-center pt-1">
             <Link
               href="/work-with-julie"
               className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#121315] hover:text-[#C59E4E] transition-colors"
@@ -388,18 +388,18 @@ export default function HomePage() {
       </section>
 
       {/* 6. Meet Julie Snapshot */}
-      <section className="py-14 sm:py-18 bg-white border-y border-editorial">
+      <section className="py-10 sm:py-14 bg-white border-y border-editorial">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-[#FAF6F0] rounded-3xl p-6 sm:p-9 border border-editorial shadow-xs grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-center">
+          <div className="bg-[#FAF6F0] rounded-3xl p-6 sm:p-8 border border-editorial shadow-xs grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-center">
             
             {/* Portrait Image */}
-            <div className="md:col-span-4 text-center space-y-3">
-              <div className="relative w-44 h-44 mx-auto rounded-full overflow-hidden border-3 border-[#C59E4E] shadow-lg group bg-[#121315]">
+            <div className="md:col-span-4 text-center space-y-2.5">
+              <div className="relative w-40 h-40 mx-auto rounded-full overflow-hidden border-3 border-[#C59E4E] shadow-lg group bg-[#121315]">
                 <Image
                   src="/images/julie-portrait.jpg"
                   alt="Julie Goetzinger - Certified Astrocartographer"
-                  width={240}
-                  height={240}
+                  width={220}
+                  height={220}
                   className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
                   referrerPolicy="no-referrer"
                 />
@@ -407,7 +407,7 @@ export default function HomePage() {
               </div>
               
               <div>
-                <h3 className="font-serif text-xl font-bold text-[#121315]">
+                <h3 className="font-serif text-lg sm:text-xl font-bold text-[#121315]">
                   Julie Goetzinger
                 </h3>
                 <p className="text-xs text-[#7C6A46] font-medium font-sans">
@@ -417,7 +417,7 @@ export default function HomePage() {
             </div>
 
             {/* Bio Synopsis */}
-            <div className="md:col-span-8 space-y-4 text-center md:text-left">
+            <div className="md:col-span-8 space-y-3 text-center md:text-left">
               <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#F5EFEB] border border-editorial text-xs font-semibold uppercase tracking-wider text-[#7C6A46]">
                 <Award className="w-3.5 h-3.5 text-[#C59E4E]" />
                 <span>Meet Your Guide</span>
@@ -435,7 +435,7 @@ export default function HomePage() {
                 As the author of <em>Free to Fly</em> and host of the <em>Travel Lightly</em> podcast, I have guided hundreds of visionary women to align their physical geography with their highest soul potential.
               </p>
 
-              <div className="pt-2 flex flex-col sm:flex-row items-center gap-3.5 justify-center md:justify-start">
+              <div className="pt-1.5 flex flex-col sm:flex-row items-center gap-3.5 justify-center md:justify-start">
                 <Link
                   href="/about"
                   className="px-6 py-2.5 bg-[#121315] hover:bg-[#202225] text-[#FAF6F0] text-xs uppercase tracking-wider font-semibold rounded-full transition-colors flex items-center gap-2 border border-editorial"
@@ -458,10 +458,10 @@ export default function HomePage() {
       </section>
 
       {/* 7. Featured Client Words */}
-      <section className="py-14 sm:py-18 bg-[#FAF6F0]">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+      <section className="py-10 sm:py-14 bg-[#FAF6F0]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
           
-          <div className="text-center max-w-2xl mx-auto space-y-2">
+          <div className="text-center max-w-2xl mx-auto space-y-1.5">
             <span className="text-xs font-semibold uppercase tracking-wider text-[#7C6A46]">
               Real Client Outcomes
             </span>
@@ -470,10 +470,10 @@ export default function HomePage() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 items-stretch">
             
-            <div className="bg-white rounded-3xl p-6 sm:p-7 border border-editorial shadow-xs space-y-4 flex flex-col justify-between">
-              <div className="space-y-3">
+            <div className="bg-white rounded-3xl p-5 sm:p-6 border border-editorial shadow-xs space-y-3.5 flex flex-col justify-between">
+              <div className="space-y-2.5">
                 <div className="flex text-[#C59E4E] gap-1">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-3.5 h-3.5 fill-[#C59E4E]" />
@@ -483,14 +483,14 @@ export default function HomePage() {
                   &ldquo;Julie told me that moving to Santa Barbara sat squarely on my Venus-Midheaven line. Within 4 months of relocating, my design studio doubled its revenue and I met my partner.&rdquo;
                 </p>
               </div>
-              <div className="border-t border-editorial pt-3">
+              <div className="border-t border-editorial pt-2.5">
                 <p className="font-serif text-sm font-bold text-[#121315]">Sarah M.</p>
                 <p className="text-[11px] text-[#64748B] font-sans">Moved from Chicago to California</p>
               </div>
             </div>
 
-            <div className="bg-white rounded-3xl p-6 sm:p-7 border border-editorial shadow-xs space-y-4 flex flex-col justify-between">
-              <div className="space-y-3">
+            <div className="bg-white rounded-3xl p-5 sm:p-6 border border-editorial shadow-xs space-y-3.5 flex flex-col justify-between">
+              <div className="space-y-2.5">
                 <div className="flex text-[#C59E4E] gap-1">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-3.5 h-3.5 fill-[#C59E4E]" />
@@ -500,14 +500,14 @@ export default function HomePage() {
                   &ldquo;I was feeling so guilty for wanting to leave my hometown. Julie explained that I was sitting directly on a harsh Saturn line. That validation alone lifted years of self-doubt.&rdquo;
                 </p>
               </div>
-              <div className="border-t border-editorial pt-3">
+              <div className="border-t border-editorial pt-2.5">
                 <p className="font-serif text-sm font-bold text-[#121315]">Elena R.</p>
                 <p className="text-[11px] text-[#64748B] font-sans">Author & Relocation Client</p>
               </div>
             </div>
 
-            <div className="bg-white rounded-3xl p-6 sm:p-7 border border-editorial shadow-xs space-y-4 flex flex-col justify-between">
-              <div className="space-y-3">
+            <div className="bg-white rounded-3xl p-5 sm:p-6 border border-editorial shadow-xs space-y-3.5 flex flex-col justify-between">
+              <div className="space-y-2.5">
                 <div className="flex text-[#C59E4E] gap-1">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-3.5 h-3.5 fill-[#C59E4E]" />
@@ -517,7 +517,7 @@ export default function HomePage() {
                   &ldquo;The written report Julie sent after our session is something I revisit every time I travel or plan remote work quarters. It is the best investment in self-knowledge I have made.&rdquo;
                 </p>
               </div>
-              <div className="border-t border-editorial pt-3">
+              <div className="border-t border-editorial pt-2.5">
                 <p className="font-serif text-sm font-bold text-[#121315]">Claire V.</p>
                 <p className="text-[11px] text-[#64748B] font-sans">Remote Tech Executive</p>
               </div>
@@ -529,13 +529,13 @@ export default function HomePage() {
       </section>
 
       {/* 8. Final High-Conversion CTA Banner */}
-      <section className="py-14 sm:py-16 bg-[#121315] text-[#FAF6F0] border-t border-editorial relative overflow-hidden">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-          <div className="w-12 h-12 rounded-full bg-white/5 border border-[#C59E4E]/40 flex items-center justify-center mx-auto text-[#C59E4E]">
-            <Compass className="w-6 h-6 animate-pulse" />
+      <section className="py-10 sm:py-14 bg-[#121315] text-[#FAF6F0] border-t border-editorial relative overflow-hidden">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-5">
+          <div className="w-10 h-10 rounded-full bg-white/5 border border-[#C59E4E]/40 flex items-center justify-center mx-auto text-[#C59E4E]">
+            <Compass className="w-5 h-5 animate-pulse" />
           </div>
 
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-normal text-white">
+          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-normal text-white">
             Ready to discover where your next chapter begins?
           </h2>
 
@@ -543,10 +543,10 @@ export default function HomePage() {
             Reserve your private 1:1 Astrocartography & Intuitive Reading with Julie. Includes live video session, full recording, and personalized written report.
           </p>
 
-          <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
+          <div className="pt-1.5 flex flex-col sm:flex-row items-center justify-center gap-3">
             <button
               onClick={() => handleOpenBooking('reading-60')}
-              className="w-full sm:w-auto px-8 py-3.5 bg-[#C59E4E] hover:bg-[#D4AF37] text-[#121315] text-xs uppercase tracking-wider font-bold rounded-full shadow-lg transition-all flex items-center justify-center gap-2 cursor-pointer"
+              className="w-full sm:w-auto px-7 py-3 bg-[#C59E4E] hover:bg-[#D4AF37] text-[#121315] text-xs uppercase tracking-wider font-bold rounded-full shadow-lg transition-all flex items-center justify-center gap-2 cursor-pointer"
             >
               <Calendar className="w-4 h-4" />
               <span>Book 60-Min Reading ($333)</span>
@@ -554,7 +554,7 @@ export default function HomePage() {
 
             <Link
               href="/work-with-julie"
-              className="w-full sm:w-auto px-7 py-3.5 bg-white/10 hover:bg-white/20 text-[#FAF6F0] text-xs uppercase tracking-wider font-semibold rounded-full border border-white/20 transition-all flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-6 py-3 bg-white/10 hover:bg-white/20 text-[#FAF6F0] text-xs uppercase tracking-wider font-semibold rounded-full border border-white/20 transition-all flex items-center justify-center gap-2"
             >
               <span>Compare All Offerings</span>
               <ArrowRight className="w-3.5 h-3.5" />

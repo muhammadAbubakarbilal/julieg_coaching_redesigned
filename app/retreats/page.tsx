@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import ScrollDownIndicator from '@/components/ScrollDownIndicator';
 import { RETREATS } from '@/lib/data/retreats';
 import { Calendar, MapPin, Users, CheckCircle2, ArrowRight, Heart } from 'lucide-react';
 
@@ -23,7 +24,7 @@ export default function RetreatsPage() {
       <Navbar />
 
       {/* Hero */}
-      <section className="py-16 sm:py-20 bg-gradient-to-b from-[#F4EFEA] to-[#FAF8F5] border-b border-[#E8DFC8]/60">
+      <section className="py-10 sm:py-14 bg-gradient-to-b from-[#F4EFEA] to-[#FAF8F5] border-b border-[#E8DFC8]/60">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#EFE8DE] border border-[#D8CFC4] text-xs sm:text-sm font-bold uppercase tracking-wider text-[#7C6A46]">
             <MapPin className="w-4 h-4 text-[#C59E4E]" />
@@ -37,12 +38,16 @@ export default function RetreatsPage() {
           <p className="text-base sm:text-lg text-[#334155] leading-relaxed max-w-2xl mx-auto">
             Experience profound energetic rest, sisterhood, live Astrocartography breakthroughs, and intuitive alignment in virtual and luxury destination containers.
           </p>
+
+          <div className="pt-3">
+            <ScrollDownIndicator targetId="retreats-list" label="Explore Gatherings" />
+          </div>
         </div>
       </section>
 
       {/* Retreats Detailed Display */}
-      <section className="py-16 sm:py-20 bg-[#FAF8F5]">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <section id="retreats-list" className="py-10 sm:py-14 bg-[#FAF8F5]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
           
           {RETREATS.map((retreat) => (
             <div

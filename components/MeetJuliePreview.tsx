@@ -5,7 +5,7 @@ import { Award, Compass, Heart, ArrowRight, BookOpen } from 'lucide-react';
 
 export default function MeetJuliePreview() {
   return (
-    <section className="py-14 sm:py-18 bg-[#F4EFEA] border-y border-[#E8DFC8]/70 relative">
+    <section id="meet-julie" className="py-10 sm:py-14 bg-[#F4EFEA] border-y border-[#E8DFC8]/70 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           

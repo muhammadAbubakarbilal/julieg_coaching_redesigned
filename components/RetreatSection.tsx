@@ -7,8 +7,8 @@ import { Calendar, MapPin, Users, ArrowRight, CheckCircle2 } from 'lucide-react'
 
 export default function RetreatSection() {
   return (
-    <section id="retreats-section" className="py-20 bg-[#FAF8F5] relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
+    <section id="retreats-section" className="py-10 sm:py-14 bg-[#FAF8F5] relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-3">

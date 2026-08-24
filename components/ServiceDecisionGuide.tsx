@@ -78,18 +78,18 @@ export default function ServiceDecisionGuide({ onOpenBooking }: ServiceDecisionG
   ];
 
   return (
-    <section id="service-selection" className="py-16 sm:py-20 bg-[#FAF8F5] relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+    <section id="service-selection" className="py-10 sm:py-14 bg-[#FAF8F5] relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto space-y-3.5">
+        <div className="text-center max-w-3xl mx-auto space-y-2.5">
           <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-[#7C6A46]">
             Guided Self-Selection
           </span>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#0B1325] leading-tight">
             Where are you right now?
           </h2>
-          <p className="text-base sm:text-lg text-[#334155] leading-relaxed">
+          <p className="text-sm sm:text-base text-[#334155] leading-relaxed">
             Find the exact container, reading, or resource designed for your current moment in life. No guesswork required.
           </p>
         </div>

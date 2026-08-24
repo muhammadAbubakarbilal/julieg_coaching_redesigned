@@ -41,11 +41,11 @@ export default function ProblemSection({ onOpenBooking }: ProblemSectionProps) {
   ];
 
   return (
-    <section id="recognition-section" className="py-20 bg-[#FAF8F5] relative">
+    <section id="recognition-section" className="py-10 sm:py-14 bg-[#FAF8F5] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto space-y-3.5 mb-14">
+        <div className="text-center max-w-3xl mx-auto space-y-3 mb-8">
           <span className="text-sm font-bold uppercase tracking-[0.2em] text-[#7C6A46] block">
             The Crossroads You May Be Standing In
           </span>
@@ -83,7 +83,7 @@ export default function ProblemSection({ onOpenBooking }: ProblemSectionProps) {
         </div>
 
         {/* Transition Banner */}
-        <div className="mt-16 bg-gradient-to-r from-[#0B1325] via-[#111A30] to-[#0B1325] rounded-3xl p-8 sm:p-12 text-[#FAF8F5] border border-[#C59E4E]/50 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-8">
+        <div className="mt-8 sm:mt-10 bg-gradient-to-r from-[#0B1325] via-[#111A30] to-[#0B1325] rounded-3xl p-6 sm:p-10 text-[#FAF8F5] border border-[#C59E4E]/50 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-6 sm:gap-8">
           <div className="space-y-3 text-center lg:text-left">
             <span className="text-xs sm:text-sm uppercase tracking-widest font-bold text-[#D4AF37] block">
               Clarity & Direction

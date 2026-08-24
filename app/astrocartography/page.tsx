@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import BookingModal from '@/components/BookingModal';
 import InteractiveMapPreview from '@/components/InteractiveMapPreview';
+import ScrollDownIndicator from '@/components/ScrollDownIndicator';
 import { PLANETARY_LINES, ASTRO_ANGLES } from '@/lib/data/astrocartography';
 import { SERVICES } from '@/lib/data/services';
 import { Globe, Compass, CheckCircle2, ArrowRight, Star, HelpCircle } from 'lucide-react';
@@ -24,7 +25,7 @@ export default function AstrocartographyPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-16 sm:py-20 bg-gradient-to-b from-[#F4EFEA] to-[#FAF8F5] border-b border-[#E8DFC8]/60">
+      <section className="py-10 sm:py-14 bg-gradient-to-b from-[#F4EFEA] to-[#FAF8F5] border-b border-[#E8DFC8]/60">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#EFE8DE] border border-[#D8CFC4] text-xs sm:text-sm font-bold uppercase tracking-wider text-[#7C6A46]">
             <Globe className="w-4 h-4 text-[#C59E4E]" />
@@ -39,29 +40,33 @@ export default function AstrocartographyPage() {
             Discover why certain cities ignite your vitality and prosperity while others feel heavy and stagnant—and how to intentionally choose places where your energy thrives.
           </p>
 
-          <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
             <button
               onClick={() => openBooking('reading-60')}
-              className="w-full sm:w-auto px-8 py-4 bg-[#0B1325] hover:bg-[#1A243F] text-[#FAF8F5] text-sm uppercase tracking-wider font-bold rounded-full shadow-lg transition-all flex items-center justify-center gap-2.5 border border-[#C59E4E]/40 cursor-pointer"
+              className="w-full sm:w-auto px-7 py-3.5 bg-[#0B1325] hover:bg-[#1A243F] text-[#FAF8F5] text-xs sm:text-sm uppercase tracking-wider font-bold rounded-full shadow-md transition-all flex items-center justify-center gap-2.5 border border-[#C59E4E]/40 cursor-pointer"
             >
               <span>Book Your Reading ($333)</span>
               <ArrowRight className="w-4 h-4 text-[#D4AF37]" />
             </button>
             <a
               href="#explainer-details"
-              className="w-full sm:w-auto px-8 py-4 bg-white hover:bg-[#F5EFEB] text-[#0B1325] text-sm font-bold rounded-full border border-[#D8CFC4] text-center transition-colors"
+              className="w-full sm:w-auto px-7 py-3.5 bg-white hover:bg-[#F5EFEB] text-[#0B1325] text-xs sm:text-sm font-bold rounded-full border border-[#D8CFC4] text-center transition-colors"
             >
               Learn the Mechanics
             </a>
+          </div>
+
+          <div className="pt-5">
+            <ScrollDownIndicator targetId="interactive-map-section" label="Explore Map" />
           </div>
         </div>
       </section>
 
       {/* Interactive Map Visual */}
-      <section className="py-16 sm:py-20 bg-[#FAF8F5]">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
+      <section id="interactive-map-section" className="py-10 sm:py-14 bg-[#FAF8F5]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
           
-          <div className="text-center max-w-3xl mx-auto space-y-3">
+          <div className="text-center max-w-3xl mx-auto space-y-2.5">
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#0B1325] leading-snug">
               Experience Your Chart Across the Globe
             </h2>
@@ -73,17 +78,17 @@ export default function AstrocartographyPage() {
           <InteractiveMapPreview />
 
           {/* Core Definition */}
-          <div id="explainer-details" className="bg-white rounded-3xl p-8 sm:p-10 border border-[#E8DFC8] shadow-xs space-y-5">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#EFE8DE] border border-[#D8CFC4] text-xs sm:text-sm font-bold uppercase tracking-wider text-[#7C6A46]">
-              <Compass className="w-4 h-4 text-[#C59E4E]" />
+          <div id="explainer-details" className="bg-white rounded-3xl p-6 sm:p-9 border border-[#E8DFC8] shadow-xs space-y-4">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#EFE8DE] border border-[#D8CFC4] text-xs font-bold uppercase tracking-wider text-[#7C6A46]">
+              <Compass className="w-3.5 h-3.5 text-[#C59E4E]" />
               <span>Fundamental Concepts</span>
             </div>
 
-            <h3 className="font-serif text-3xl sm:text-4xl font-bold text-[#0B1325] leading-snug">
+            <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#0B1325] leading-snug">
               What Exactly is Astrocartography?
             </h3>
 
-            <div className="space-y-4 text-sm sm:text-base text-[#334155] leading-relaxed">
+            <div className="space-y-3.5 text-sm sm:text-base text-[#334155] leading-relaxed">
               <p>
                 Astrocartography (pioneered in the 1970s by astrologer Jim Lewis) is a specialized branch of locational astrology. When you were born, every planet occupied a specific astronomical degree in the heavens.
               </p>

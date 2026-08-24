@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import ScrollDownIndicator from '@/components/ScrollDownIndicator';
 import { MENTORING_OFFER } from '@/lib/data/services';
 import { HeartHandshake, CheckCircle2, MessageSquare, Video, ShieldCheck, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
@@ -33,7 +34,7 @@ export default function MentoringPage() {
       <Navbar />
 
       {/* Hero */}
-      <section className="py-16 sm:py-20 bg-gradient-to-b from-[#F4EFEA] to-[#FAF8F5] border-b border-[#E8DFC8]/60">
+      <section className="py-10 sm:py-14 bg-gradient-to-b from-[#F4EFEA] to-[#FAF8F5] border-b border-[#E8DFC8]/60">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#EFE8DE] border border-[#D8CFC4] text-xs sm:text-sm font-bold uppercase tracking-wider text-[#7C6A46]">
             <HeartHandshake className="w-4 h-4 text-[#C59E4E]" />
@@ -47,18 +48,22 @@ export default function MentoringPage() {
           <p className="text-base sm:text-lg text-[#334155] leading-relaxed max-w-2xl mx-auto">
             An intimate, ongoing mentorship combining Astrocartography, intuitive psychic guidance, and grounded accountability to support your next season of life.
           </p>
+
+          <div className="pt-3">
+            <ScrollDownIndicator targetId="mentoring-overview" label="Explore Container" />
+          </div>
         </div>
       </section>
 
       {/* Overview & Who It Is For */}
-      <section className="py-16 sm:py-20 bg-[#FAF8F5]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <section id="mentoring-overview" className="py-10 sm:py-14 bg-[#FAF8F5]">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
           
-          <div className="bg-white rounded-3xl p-8 sm:p-10 border border-[#E8DFC8] shadow-xs space-y-6">
-            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#0B1325] leading-snug">
+          <div className="bg-white rounded-3xl p-6 sm:p-9 border border-[#E8DFC8] shadow-xs space-y-5">
+            <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#0B1325] leading-snug">
               Beyond a Single Reading: Dedicated Ongoing Support
             </h2>
-            <div className="space-y-4 text-sm sm:text-base text-[#334155] leading-relaxed">
+            <div className="space-y-3.5 text-xs sm:text-sm md:text-base text-[#334155] leading-relaxed">
               <p>
                 A single 60 or 120-minute Astrocartography reading gives you incredible clarity on where to go. But when you are actively packing up a life, selling a home, pivoting your career, or rebuilding after divorce, you face daily decisions, emotional waves, and subconscious resistance.
               </p>
@@ -68,13 +73,13 @@ export default function MentoringPage() {
             </div>
 
             {/* Container Deliverables */}
-            <div className="pt-6 border-t border-[#E8DFC8]">
-              <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#0B1325] mb-4">
+            <div className="pt-5 border-t border-[#E8DFC8]">
+              <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#0B1325] mb-3.5">
                 What Is Included in Your Mentorship:
               </h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                 {MENTORING_OFFER.features.map((feat, idx) => (
-                  <div key={idx} className="flex items-start gap-2.5 text-sm sm:text-base text-[#334155] leading-relaxed">
+                  <div key={idx} className="flex items-start gap-2.5 text-xs sm:text-sm md:text-base text-[#334155] leading-relaxed">
                     <CheckCircle2 className="w-4 h-4 text-[#C59E4E] shrink-0 mt-0.5" />
                     <span>{feat}</span>
                   </div>
@@ -84,17 +89,17 @@ export default function MentoringPage() {
           </div>
 
           {/* Application Form */}
-          <div id="apply-mentoring" className="bg-white border border-[#D8CFC4] rounded-3xl p-8 sm:p-10 shadow-xs">
+          <div id="apply-mentoring" className="bg-white border border-[#D8CFC4] rounded-3xl p-6 sm:p-9 shadow-xs">
             {!isSubmitted ? (
-              <form onSubmit={handleSubmit} className="space-y-5">
-                <div className="text-center space-y-2.5 mb-6">
+              <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
+                <div className="text-center space-y-2 mb-5">
                   <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#EFE8DE] border border-[#D8CFC4] text-xs font-bold uppercase tracking-wider text-[#7C6A46]">
                     Private Application
                   </span>
                   <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#0B1325] leading-snug">
                     Apply for 1:1 Mentorship
                   </h3>
-                  <p className="text-sm sm:text-base text-[#64748B] max-w-md mx-auto leading-relaxed">
+                  <p className="text-xs sm:text-sm text-[#64748B] max-w-md mx-auto leading-relaxed">
                     Mentorship spaces are strictly limited to ensure deep attention. Fill out the brief application below to explore if this container is the right match.
                   </p>
                 </div>

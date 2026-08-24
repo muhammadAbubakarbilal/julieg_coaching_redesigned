@@ -8,7 +8,7 @@ import Image from 'next/image';
 
 export default function BookShowcase() {
   return (
-    <section id="book-spotlight" className="py-16 sm:py-20 bg-[#F4EFEA] border-y border-[#E8DFC8]/70">
+    <section id="book-spotlight" className="py-10 sm:py-14 bg-[#F4EFEA] border-y border-[#E8DFC8]/70">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-[#FAF8F5] rounded-3xl p-8 sm:p-10 md:p-14 border border-[#E8DFC8] shadow-lg">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">

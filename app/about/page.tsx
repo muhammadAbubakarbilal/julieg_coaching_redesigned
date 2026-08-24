@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import BookingModal from '@/components/BookingModal';
+import ScrollDownIndicator from '@/components/ScrollDownIndicator';
 import { Award, Compass, Heart, BookOpen, Sun, MapPin, CheckCircle2, ArrowRight, ShieldCheck } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -16,7 +17,7 @@ export default function AboutPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-16 sm:py-20 bg-gradient-to-b from-[#F4EFEA] to-[#FAF8F5] border-b border-[#E8DFC8]/60">
+      <section className="py-10 sm:py-14 bg-gradient-to-b from-[#F4EFEA] to-[#FAF8F5] border-b border-[#E8DFC8]/60">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#EFE8DE] border border-[#D8CFC4] text-xs sm:text-sm font-bold uppercase tracking-wider text-[#7C6A46]">
             <Compass className="w-4 h-4 text-[#C59E4E]" />
@@ -28,22 +29,26 @@ export default function AboutPage() {
           <p className="text-base sm:text-lg text-[#334155] leading-relaxed max-w-2xl mx-auto">
             Certified Astrocartographer, Psychic Medium, Author, and Intuitive Life Guide helping women align with their soul&apos;s geographic blueprint.
           </p>
+
+          <div className="pt-3">
+            <ScrollDownIndicator targetId="about-story" label="Read Julie's Story" />
+          </div>
         </div>
       </section>
 
       {/* Story & Background */}
-      <section className="py-16 sm:py-20 bg-[#FAF8F5]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
+      <section id="about-story" className="py-10 sm:py-14 bg-[#FAF8F5]">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
           
           {/* Julie's Profile Framing */}
-          <div className="bg-white rounded-3xl p-8 sm:p-10 border border-[#E8DFC8] shadow-xs grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-            <div className="md:col-span-4 text-center space-y-3.5">
-              <div className="relative w-48 h-48 mx-auto rounded-full overflow-hidden border-3 border-[#C59E4E] shadow-md group bg-[#0B1325]">
+          <div className="bg-white rounded-3xl p-6 sm:p-9 border border-[#E8DFC8] shadow-xs grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-center">
+            <div className="md:col-span-4 text-center space-y-3">
+              <div className="relative w-40 h-40 sm:w-44 sm:h-44 mx-auto rounded-full overflow-hidden border-3 border-[#C59E4E] shadow-md group bg-[#0B1325]">
                 <Image
                   src="/images/julie-portrait.jpg"
                   alt="Julie Goetzinger - Certified Astrocartographer"
-                  width={240}
-                  height={240}
+                  width={200}
+                  height={200}
                   className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
                   referrerPolicy="no-referrer"
                 />
@@ -56,14 +61,14 @@ export default function AboutPage() {
                 <p className="text-xs sm:text-sm text-[#7C6A46] font-bold uppercase tracking-wider mt-0.5">
                   Certified by Helena Woods
                 </p>
-                <p className="text-xs sm:text-sm text-[#64748B] mt-1 font-medium">
+                <p className="text-xs sm:text-sm text-[#64748B] mt-0.5 font-medium">
                   Gemini Sun • Pisces Rising • Leo Moon
                 </p>
               </div>
             </div>
 
-            <div className="md:col-span-8 space-y-4 text-sm sm:text-base text-[#334155] leading-relaxed border-t md:border-t-0 md:border-l border-[#E8DFC8] pt-6 md:pt-0 md:pl-8">
-              <p className="font-serif italic text-lg sm:text-xl text-[#0B1325] leading-relaxed">
+            <div className="md:col-span-8 space-y-3.5 text-xs sm:text-sm md:text-base text-[#334155] leading-relaxed border-t md:border-t-0 md:border-l border-[#E8DFC8] pt-5 md:pt-0 md:pl-7">
+              <p className="font-serif italic text-base sm:text-lg text-[#0B1325] leading-relaxed">
                 &ldquo;I believe that you are not lost, broken, or failing when you feel depleted. Very often, you are simply living in a location that is energetically fighting where your soul wants to expand.&rdquo;
               </p>
               <p className="text-[#334155]">

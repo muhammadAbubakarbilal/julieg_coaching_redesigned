@@ -16,8 +16,8 @@ export default function TestimonialsSection({ onOpenBooking }: TestimonialsSecti
     : TESTIMONIALS.filter(t => t.category === activeCategory);
 
   return (
-    <section id="client-stories" className="py-14 sm:py-18 bg-[#FAF8F5] relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+    <section id="client-stories" className="py-10 sm:py-14 bg-[#FAF8F5] relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-3.5">

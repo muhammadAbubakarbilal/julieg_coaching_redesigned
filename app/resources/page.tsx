@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import FreeGuideLeadMagnet from '@/components/FreeGuideLeadMagnet';
 import BookShowcase from '@/components/BookShowcase';
+import ScrollDownIndicator from '@/components/ScrollDownIndicator';
 import { BOOK_DETAILS, PODCAST_SHOWS, ARTICLES, OFFICE_HOURS_INFO } from '@/lib/data/resources';
 import { BookOpen, Radio, FileText, Compass, ArrowRight, ExternalLink, Calendar, CheckCircle2 } from 'lucide-react';
 import Link from 'next/link';
@@ -24,7 +25,7 @@ export default function ResourcesPage() {
       <Navbar />
 
       {/* Hero */}
-      <section className="py-16 sm:py-20 bg-gradient-to-b from-[#F4EFEA] to-[#FAF8F5] border-b border-[#E8DFC8]/60">
+      <section className="py-10 sm:py-14 bg-gradient-to-b from-[#F4EFEA] to-[#FAF8F5] border-b border-[#E8DFC8]/60">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#EFE8DE] border border-[#D8CFC4] text-xs sm:text-sm font-bold uppercase tracking-wider text-[#7C6A46]">
             <Compass className="w-4 h-4 text-[#C59E4E]" />
@@ -38,6 +39,10 @@ export default function ResourcesPage() {
           <p className="text-base sm:text-lg text-[#334155] leading-relaxed max-w-2xl mx-auto">
             Explore free guides, books, podcasts, and articles to help you navigate moves, career pivots, and life transitions with cosmic clarity.
           </p>
+
+          <div className="pt-3">
+            <ScrollDownIndicator targetId="free-guide" label="Explore Resources" />
+          </div>
         </div>
       </section>
 
@@ -50,10 +55,10 @@ export default function ResourcesPage() {
       </div>
 
       {/* 3. Podcasts Spotlight */}
-      <section id="podcasts" className="py-16 sm:py-20 bg-[#FAF8F5]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 sm:space-y-12">
+      <section id="podcasts" className="py-10 sm:py-14 bg-[#FAF8F5]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 sm:space-y-10">
           
-          <div className="text-center max-w-3xl mx-auto space-y-3">
+          <div className="text-center max-w-3xl mx-auto space-y-2.5">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#EFE8DE] border border-[#D8CFC4] text-xs sm:text-sm font-bold uppercase tracking-wider text-[#7C6A46]">
               <Radio className="w-4 h-4 text-[#C59E4E]" />
               <span>Listen & Subscribe</span>
@@ -66,13 +71,13 @@ export default function ResourcesPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             {PODCAST_SHOWS.map((pod, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-3xl p-8 sm:p-10 border border-[#E8DFC8] shadow-xs flex flex-col justify-between space-y-6"
+                className="bg-white rounded-3xl p-6 sm:p-8 border border-[#E8DFC8] shadow-xs flex flex-col justify-between space-y-5"
               >
-                <div className="space-y-4">
+                <div className="space-y-3.5">
                   <div className="flex items-center justify-between">
                     <div className="w-12 h-12 rounded-2xl bg-[#0B1325] text-[#D4AF37] flex items-center justify-center">
                       <Radio className="w-6 h-6" />
@@ -83,15 +88,15 @@ export default function ResourcesPage() {
                   </div>
 
                   <div>
-                    <h3 className="font-serif text-2xl font-bold text-[#0B1325] leading-snug">
+                    <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#0B1325] leading-snug">
                       {pod.title}
                     </h3>
-                    <p className="text-xs sm:text-sm text-[#64748B] font-bold mt-1">
+                    <p className="text-xs sm:text-sm text-[#64748B] font-bold mt-0.5">
                       {pod.host}
                     </p>
                   </div>
 
-                  <p className="text-sm sm:text-base text-[#334155] leading-relaxed">
+                  <p className="text-xs sm:text-sm md:text-base text-[#334155] leading-relaxed">
                     {pod.description}
                   </p>
 
@@ -104,12 +109,12 @@ export default function ResourcesPage() {
                   </div>
                 </div>
 
-                <div className="pt-4 border-t border-[#E8DFC8]">
+                <div className="pt-3 border-t border-[#E8DFC8]">
                   <a
                     href="https://podcasts.apple.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full py-3.5 bg-[#FAF8F5] hover:bg-[#0B1325] text-[#0B1325] hover:text-[#FAF8F5] border border-[#0B1325] text-xs sm:text-sm font-bold rounded-full flex items-center justify-center gap-2 transition-all cursor-pointer shadow-xs"
+                    className="w-full py-3 bg-[#FAF8F5] hover:bg-[#0B1325] text-[#0B1325] hover:text-[#FAF8F5] border border-[#0B1325] text-xs sm:text-sm font-bold rounded-full flex items-center justify-center gap-2 transition-all cursor-pointer shadow-xs"
                   >
                     <span>Listen on Apple Podcasts & Spotify</span>
                     <ExternalLink className="w-4 h-4" />
@@ -123,8 +128,8 @@ export default function ResourcesPage() {
       </section>
 
       {/* 4. Office Hours with Spirit Gathering */}
-      <section className="py-16 sm:py-20 bg-[#0B1325] text-[#FAF8F5] border-y border-[#C59E4E]/30">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-5">
+      <section className="py-10 sm:py-14 bg-[#0B1325] text-[#FAF8F5] border-y border-[#C59E4E]/30">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 text-xs sm:text-sm font-bold uppercase tracking-wider text-[#D4AF37]">
             <Calendar className="w-4 h-4" />
             <span>Monthly Live Gathering</span>
@@ -138,10 +143,10 @@ export default function ResourcesPage() {
             {OFFICE_HOURS_INFO.description}
           </p>
 
-          <div className="pt-3">
+          <div className="pt-2">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2.5 px-8 py-4 bg-[#C59E4E] hover:bg-[#D4AF37] text-[#0B1325] text-xs sm:text-sm uppercase tracking-wider font-bold rounded-full transition-all shadow-md cursor-pointer"
+              className="inline-flex items-center gap-2 px-7 py-3.5 bg-[#C59E4E] hover:bg-[#D4AF37] text-[#0B1325] text-xs sm:text-sm uppercase tracking-wider font-bold rounded-full transition-all shadow-md cursor-pointer"
             >
               <span>Inquire for Next Date & Access</span>
               <ArrowRight className="w-4 h-4" />
@@ -151,15 +156,15 @@ export default function ResourcesPage() {
       </section>
 
       {/* 5. Articles & Insights */}
-      <section id="articles" className="py-16 sm:py-20 bg-[#FAF8F5]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 sm:space-y-12">
+      <section id="articles" className="py-10 sm:py-14 bg-[#FAF8F5]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 sm:space-y-10">
           
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-[#E8DFC8] pb-5">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-[#E8DFC8] pb-4">
             <div>
               <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#7C6A46]">
                 Articles & Editorial
               </span>
-              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#0B1325] leading-snug">
+              <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#0B1325] leading-snug">
                 Essays on Relocation & Life Reinvention
               </h2>
             </div>
@@ -170,7 +175,7 @@ export default function ResourcesPage() {
                   key={c}
                   type="button"
                   onClick={() => setSelectedCategory(c)}
-                  className={`px-4 py-2 text-xs sm:text-sm font-bold rounded-full transition-all cursor-pointer ${
+                  className={`px-3.5 py-1.5 text-xs sm:text-sm font-bold rounded-full transition-all cursor-pointer ${
                     selectedCategory === c
                       ? 'bg-[#0B1325] text-[#FAF8F5]'
                       : 'bg-white text-[#334155] border border-[#D8CFC4] hover:bg-[#F5EFEB]'

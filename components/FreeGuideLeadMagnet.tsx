@@ -22,7 +22,7 @@ export default function FreeGuideLeadMagnet() {
   };
 
   return (
-    <section id="free-guide" className="py-16 sm:py-20 bg-[#FAF8F5] relative">
+    <section id="free-guide" className="py-10 sm:py-14 bg-[#FAF8F5] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-gradient-to-br from-[#0B1325] via-[#111A30] to-[#0B1325] text-[#FAF8F5] rounded-3xl p-8 sm:p-10 md:p-14 border border-[#C59E4E]/40 shadow-xl relative overflow-hidden">
           

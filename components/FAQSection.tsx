@@ -17,8 +17,8 @@ export default function FAQSection({ onOpenBooking }: FAQSectionProps) {
   };
 
   return (
-    <section id="faq-section" className="py-20 bg-[#F4EFEA] border-t border-[#E8DFC8]/70">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+    <section id="faq-section" className="py-10 sm:py-14 bg-[#F4EFEA] border-t border-[#E8DFC8]/70">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         
         {/* Section Header */}
         <div className="text-center space-y-3.5">

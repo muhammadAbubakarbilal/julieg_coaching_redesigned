@@ -405,11 +405,11 @@ export default function InteractiveMapPreview({ onCitySelect }: InteractiveMapPr
         {activeLineDef && (
           <div
             style={{
-              left: `${activeLineDef.tooltipX}%`,
-              top: `${activeLineDef.tooltipY}%`,
-              transform: `translate(${activeLineDef.tooltipX > 60 ? '-100%' : '12px'}, -50%)`
+              left: `${Math.min(Math.max(activeLineDef.tooltipX, 20), 80)}%`,
+              top: `${Math.min(Math.max(activeLineDef.tooltipY, 20), 75)}%`,
+              transform: `translate(${activeLineDef.tooltipX > 50 ? '-100%' : '12px'}, -50%)`
             }}
-            className="absolute z-20 pointer-events-auto max-w-[260px] sm:max-w-[280px] bg-[#0B1325]/95 backdrop-blur-md border border-[#D4AF37]/60 rounded-xl p-3.5 shadow-2xl animate-in fade-in zoom-in-95 duration-150"
+            className="absolute z-20 pointer-events-auto w-[240px] sm:w-[280px] max-w-[calc(100%-2rem)] bg-[#0B1325]/95 backdrop-blur-md border border-[#D4AF37]/60 rounded-xl p-3 sm:p-3.5 shadow-2xl animate-in fade-in zoom-in-95 duration-150"
           >
             <div className="flex items-start justify-between gap-2 border-b border-white/10 pb-2 mb-2">
               <div className="flex items-center gap-2">
@@ -428,6 +428,14 @@ export default function InteractiveMapPreview({ onCitySelect }: InteractiveMapPr
                   </span>
                 </div>
               </div>
+              <button
+                type="button"
+                onClick={() => setHoveredLineId(null)}
+                className="text-white/60 hover:text-white p-0.5 rounded-sm sm:hidden"
+                aria-label="Close tooltip"
+              >
+                <X className="w-3.5 h-3.5" />
+              </button>
             </div>
 
             <p className="text-[11px] text-white/90 leading-relaxed mb-2.5">

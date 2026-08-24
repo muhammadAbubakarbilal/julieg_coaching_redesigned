@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import ScrollDownIndicator from '@/components/ScrollDownIndicator';
 import Image from 'next/image';
 import { Mail, Compass, CheckCircle2, ArrowRight, Clock, MapPin } from 'lucide-react';
 import Link from 'next/link';
@@ -32,7 +33,7 @@ export default function ContactPage() {
       <Navbar />
 
       {/* Hero */}
-      <section className="py-16 sm:py-20 bg-gradient-to-b from-[#F4EFEA] to-[#FAF8F5] border-b border-[#E8DFC8]/60">
+      <section className="py-10 sm:py-14 bg-gradient-to-b from-[#F4EFEA] to-[#FAF8F5] border-b border-[#E8DFC8]/60">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#EFE8DE] border border-[#D8CFC4] text-xs sm:text-sm font-bold uppercase tracking-wider text-[#7C6A46]">
             <Mail className="w-4 h-4 text-[#C59E4E]" />
@@ -46,11 +47,15 @@ export default function ContactPage() {
           <p className="text-base sm:text-lg text-[#334155] leading-relaxed max-w-2xl mx-auto">
             Whether you&apos;re wondering which reading is right for your situation or inquiring about retreats and mentoring, we&apos;d love to hear from you.
           </p>
+
+          <div className="pt-3">
+            <ScrollDownIndicator targetId="contact-details" label="Send a Note" />
+          </div>
         </div>
       </section>
 
       {/* Form & Info Section */}
-      <section className="py-16 sm:py-20 bg-[#FAF8F5]">
+      <section id="contact-details" className="py-10 sm:py-14 bg-[#FAF8F5]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
             
